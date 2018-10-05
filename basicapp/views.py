@@ -16,3 +16,8 @@ def form_name_view(request):
             print("VALIDATION SUCCESSFUL")
             
     return render(request, 'basicapp/form_page.html', {'form': form})
+
+
+def web_form_view(request):
+    myForm = forms.WebForm()
+    return render(request, 'basic_app/web_form.html', {'web_form': myForm})
