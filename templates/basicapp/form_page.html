@@ -11,8 +11,8 @@
 <h2>Fill out this form:</h2>
 <div class="container">
     <form method="POST">
-		# Is everything secure?
-        {{ form.as_p }}
+        {%csrf_token%}
+        {{ myform }}
         <input type="submit" class="btn btn-primary" value="Submit">
     </form>
 </div>

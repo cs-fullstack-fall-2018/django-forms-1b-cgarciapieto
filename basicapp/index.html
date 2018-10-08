@@ -10,7 +10,7 @@
     <h3>Please Provide feedback</h3>
     <form method="post">
         {%csrf_token%}
-        {{web_form.as_p}}
+        {{form.as_p}}
         <input type = "submit" class ="btn btn-primary" value ="Submit"/>
     </form>
 </div>

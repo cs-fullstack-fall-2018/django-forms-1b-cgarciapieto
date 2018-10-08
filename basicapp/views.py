@@ -13,9 +13,9 @@ def form_name_view(request):
         form = forms.FormName(request.POST)
         if form.is_valid():
             # Do something
-            print("VALIDATION SUCCESSFUL")
+            print("Favorite Website Entered Was: ")
             
-    return render(request, 'basicapp/form_page.html', {'form': form})
+    return render(request, 'basicapp/form_page.html', {'myform': form})
 
 
 def web_form_view(request):
